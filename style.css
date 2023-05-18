@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body,html{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    scroll-behavior: smooth;
+    color: white;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+header{
+    background-color: rgba(93, 93, 93, 1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+nav ul{
+    display: flex;
+    gap: 25px;
+}
+nav li{
+    font-size: 20px;
+    border-bottom: 2px transparent;
+    transition: 0.3ms ease-in-out;
+}
+nav li:hover{
+    border-bottom: 2px white solid;
+    transition: 0.3ms ease-in-out;
+}
+.logo{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    font-weight: 700;
+}
+#hero{
+    background-image: url(images/bg.png);
+    height: 125vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+#hero h1{
+    font-family: 'Italiana', serif;
+    font-size: 50px;
+    font-weight: 100;
+    padding-top: 300px;
+}
+#hero{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#hero h3{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+}
+#Photography{
+  padding-top: 15px;  
+  background-color: rgb(5, 5, 5);  
+}
+.grid-image{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+.grid-image:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+
+}
+.item1{
+    grid-area: I1;
+}
+.item2{
+    grid-area: I2;
+}
+.item3{
+    grid-area: I3;
+}
+.item4{
+    grid-area: I4;
+}
+.item5{
+    grid-area: I5;
+}
+.item6{
+    grid-area: I6;
+}
+.item7{
+    grid-area: I7;
+}
+#contact {
+    background-color: rgba(93, 93, 93, 1);
+  }
+  
+  #contact h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  #contact .container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+  }
+  .top_contact {
+    max-width: 800px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+  .contact_way {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .bottom_contact {
+    max-width: 400px;
+    gap: 1rem;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+  
+  
+  .contact_way i {
+    font-size: 20px;
+  }
+  .contact_way h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+ 
+footer {
+   background-color: black;
+     padding: 10px;
+     color: white;
+     font-size: 1.6rem;
+     text-align: center;
+   }
+ 
+ 
